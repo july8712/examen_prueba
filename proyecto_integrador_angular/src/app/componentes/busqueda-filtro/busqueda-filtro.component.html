@@ -1,0 +1,57 @@
+<section id="busqueda">
+
+            <h2>Encontrá a tu Mascota</h2>
+
+            <form action="" method="">
+
+                    <label for="especie">Especie
+                        <select name="especie" id="especie" required>
+                            <option value="">Seleccionar</option>
+                            <option value="perro">Perro</option>
+                            <option value="gato">Gato</option>
+                        </select>
+                    </label>
+
+                    <label for="sexo">Sexo
+                        <select name="sexo" id="sexo">
+                            <option value="">Seleccionar</option>
+                            <option value="macho">Macho</option>
+                            <option value="hembra">Hembra</option>
+                        </select>
+                    </label>
+
+                    <label for="edad">Edad
+                        <select name="edad" id="edad">
+                            <option value="">Seleccionar</option>
+                            <option value="menor">Menos de 1 año</option>
+                            <option value="menos5">1 a 5 años</option>
+                            <option value="menos10">6 a 10 años</option>
+                            <option value="menos15">10 a 15 años</option>
+                            <option value="mayor15">+ 15 años </option>
+                        </select>
+                    </label>
+
+                    <label for="color">Color
+                        <select name="color" id="color">
+                            <option value="">Seleccionar</option>
+                            <option value="blanco">Blanco</option>
+                            <option value="negro">Negro</option>
+                            <option value="chocolate">Chocolate</option>
+                            <option value="marron">Marrón Claro</option>
+                            <option value="gris">Gris</option>
+                        </select>
+                    </label>
+
+                    <label for="manchas">Manchas / Rayas
+                        <select name="manchas" id="manchas">
+                            <option value="">Seleccionar</option>
+                            <option value="blancas">Blancas</option>
+                            <option value="negras">Negras</option>
+                            <option value="manchasChocolate">Chocolate</option>
+                            <option value="marrones">Marrón Claro</option>
+                            <option value="grises">Grises</option>
+                        </select>
+                    </label>
+                    <input type="submit" value="Buscar" id="buscar" (click)="busqueda()">
+            </form>
+        </section>

@@ -1,0 +1,90 @@
+.card {
+  border-radius: 30px !important;
+  width: 250px;
+  overflow: hidden;
+}
+
+
+.modal-header h3 {
+  text-align: center;
+  width: 100%;
+  font-weight: 900;
+  font-size: 50px;
+}
+
+.card h3 {
+  font-size: 35px;
+  text-align: center;
+}
+
+.modal-header {
+  background-color: #f19f1f;
+  /* color:white; */
+}
+
+.btn-primary {
+  background-color: #ef5030;
+  border: #ef5030 solid 2px;
+  font-weight: 600;
+  font-size: 20px;
+  border-radius: 20px;
+}
+
+.btn-primary:hover {
+  background-color: rgb(252, 229, 200);
+  border: #ef5030 solid 2px;
+  color: #ef5030;
+}
+
+.modal-footer {
+  display: flex;
+  justify-content: center;
+  border-top: none;
+}
+
+.modal-content {
+  border-radius: 50px;
+  overflow: hidden;
+}
+
+.card div {
+  width: 250px;
+  height: 200px;
+  /* object-fit: contain; */
+  overflow: hidden;
+}
+
+.card div img {
+  min-height: 100%;
+  width: 100%;
+}
+
+.modal-body img {
+  margin-bottom: 30px;
+  width: 100%;
+}
+
+.modal-body ul li {
+  list-style-type: none;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+#mascotas{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 50px;
+}
+
+.cont-mascotas {
+  padding: 70px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  /* align-items: center; */
+  row-gap: 50px;
+  column-gap: 50px;
+  max-width: 1500px;
+  margin: auto;
+}

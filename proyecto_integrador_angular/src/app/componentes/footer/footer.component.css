@@ -1,0 +1,50 @@
+footer {
+  background-color: #363636;
+  color: rgb(252, 229, 200);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 30px 0;
+  font-size: 1.3rem;
+}
+
+.datos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.datos li,
+.redes ul li {
+  list-style-type: none;
+}
+
+.datos li i {
+  margin-right: 10px;
+  color: #f19f1f;
+}
+
+
+
+.redes {
+  color: #f19f1f;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.redes h3 {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.redes ul {
+  display: flex;
+  width: 300px;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.redes ul li {
+  font-size: 2rem;
+}

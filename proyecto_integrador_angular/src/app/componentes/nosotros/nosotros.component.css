@@ -1,0 +1,42 @@
+#nosotros {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 70px;
+  width: 100%;
+}
+
+#nosotros h2 {
+  margin-bottom: 60px;
+}
+
+#nosotros .contFlex {
+  display: flex;
+}
+
+.contFlex {
+  width: 100%;
+  padding-top: 50px;
+}
+
+.contFlex div {
+  /* width: 60%; */
+  padding-right: 50px;
+}
+
+.contFlex p {
+  text-align: left;
+  margin-bottom: 30px;
+}
+
+.col2 img {
+  width: 500px;
+}
+
+
+p {
+  color: #baa8a0;
+  text-align: center;
+  /* width: 70%; */
+  font-size: 1.5em;
+}
