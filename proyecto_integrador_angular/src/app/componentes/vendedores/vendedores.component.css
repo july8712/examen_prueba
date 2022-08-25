@@ -34,7 +34,7 @@
 #registro form input {
   padding: 10px;
   border-radius: 20px;
-  width: 600px;
+  width: 300px;
 }
 
 .btnForm {
@@ -70,4 +70,12 @@
 
 th, td{
   color: #fff!important;
+}
+
+.contenedor{
+  display: flex;
+}
+
+form{
+  margin-right: 50px;
 }

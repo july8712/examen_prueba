@@ -6,29 +6,22 @@ import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 import { RouterModule, Routes } from '@angular/router';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './componentes/header/header.component';
-import { SliderComponent } from './componentes/slider/slider.component';
-import { NosotrosComponent } from './componentes/nosotros/nosotros.component';
-import { EncortrarMascotasComponent } from './componentes/encortrar-mascotas/encortrar-mascotas.component';
+import { VentasComponent } from './componentes/ventas/ventas.component';
 import { FooterComponent } from './componentes/footer/footer.component';
 import { VendedoresComponent } from './componentes/vendedores/vendedores.component';
-import { RegistroComponent } from './componentes/registro/registro.component';
 import { BusquedaFiltroComponent } from './componentes/busqueda-filtro/busqueda-filtro.component';
-import { MascotasComponent } from './componentes/mascotas/mascotas.component';
-import { HomeComponent } from './componentes/home/home.component';
+import { ProductosComponent } from './componentes/productos/productos.component';
+
 import { from } from 'rxjs';
 import { HttpClientModule } from '@angular/common/http';
 
 
 
+
 const routes:Routes = [
-  {path:'encortrar-mascotas', component:EncortrarMascotasComponent},
-  {path:'slider', component:SliderComponent},
+  {path:'ventas', component:VentasComponent},
   {path:'vendedor', component:VendedoresComponent},
-  {path:'registro', component:RegistroComponent},
-  {path:'slider', component:SliderComponent},
-  {path:'home', component:HomeComponent},
-  {path:'mascotas', component:MascotasComponent},
-  {path:'nosotros', component:NosotrosComponent},
+  {path:'productos', component:ProductosComponent},
   {path:'filtro', component:BusquedaFiltroComponent},
   {path:'', redirectTo: '/home', pathMatch: 'full'}
 ]
@@ -37,15 +30,13 @@ const routes:Routes = [
   declarations: [
     AppComponent,
     HeaderComponent,
-    SliderComponent,
-    NosotrosComponent,
-    EncortrarMascotasComponent,
+    VentasComponent,
     FooterComponent,
     VendedoresComponent,
-    RegistroComponent,
-    MascotasComponent,
-    BusquedaFiltroComponent,
-    HomeComponent
+    ProductosComponent,
+    BusquedaFiltroComponent
+
+
   ],
   imports: [
     BrowserModule,

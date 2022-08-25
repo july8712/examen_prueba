@@ -1,8 +1,8 @@
 <section id="secContacto">
-    <h2>Comunicate con nosotros</h2>
+    <h2>Agregar Vendedor</h2>
 
 
-
+<div class="contenedor">
     <form (ngSubmit)="onSubmit(contactForm.value)" #contactForm="ngForm">
         <label for="nombre">Nombre vendedor:</label>
         <input type="text" id="nombre" name="nombre" placeholder="Nombre" [(ngModel)]="vendedor.nombre" required #nombre="ngModel">
@@ -26,26 +26,27 @@
     </form>
 
 
-    <div class="tabla">
-      <h3>Esto no se debería ver, es solo de muestra...</h3>
+      <div class="tabla">
+        <h3>Lista de vendedores activos:</h3>
 
-      <pre>{{contactForm.value | json}}</pre>
+        <!-- <pre>{{contactForm.value | json}}</pre> -->
 
-      <table class="table table-striped">
-        <thead>
-          <tr>
-            <th>Nombre:</th>
-            <th>Email:</th>
-            <th>Mensaje:</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr *ngFor="let vendedor of vendedores">
-            <td>{{vendedor.nombre}}</td>
-            <!-- <td>{{vendedor.email}}</td>
-            <td>{{vendedor.mensaje}}</td> -->
-          </tr>
-        </tbody>
-      </table>
+        <table class="table table-striped">
+          <thead>
+            <tr>
+              <th>Nombre Vendedor:</th>
+              <th>Sueldo:</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let vendedor of vendedores">
+              <td>{{vendedor.nombre}}</td>
+              <td>{{vendedor.sueldo}}</td>
+              <!-- <td>{{vendedor.email}}</td>
+              <td>{{vendedor.mensaje}}</td> -->
+            </tr>
+          </tbody>
+        </table>
+      </div>
     </div>
 </section>
